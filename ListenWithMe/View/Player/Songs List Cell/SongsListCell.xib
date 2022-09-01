@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" customClass="SongsListCell" customModule="ListenWithMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wq3-SP-XhQ">
+                        <rect key="frame" x="10" y="10" width="390" height="82"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XJ-t5-Hcw">
+                                <rect key="frame" x="10" y="10" width="370" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singer name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQT-b6-AJx">
+                                <rect key="frame" x="10" y="44" width="370" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gQT-b6-AJx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8XJ-t5-Hcw" secondAttribute="bottom" constant="10" id="5rD-Qk-Ooc"/>
+                            <constraint firstAttribute="trailing" secondItem="gQT-b6-AJx" secondAttribute="trailing" constant="10" id="IUm-5q-xwO"/>
+                            <constraint firstItem="8XJ-t5-Hcw" firstAttribute="leading" secondItem="wq3-SP-XhQ" secondAttribute="leading" constant="10" id="TC0-Zq-9ay"/>
+                            <constraint firstItem="8XJ-t5-Hcw" firstAttribute="top" secondItem="wq3-SP-XhQ" secondAttribute="top" constant="10" id="UH3-2y-PQB"/>
+                            <constraint firstAttribute="trailing" secondItem="8XJ-t5-Hcw" secondAttribute="trailing" constant="10" id="URj-vN-Kc7"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="gQT-b6-AJx" secondAttribute="bottom" constant="10" id="YgJ-JR-bJx"/>
+                            <constraint firstItem="gQT-b6-AJx" firstAttribute="leading" secondItem="wq3-SP-XhQ" secondAttribute="leading" constant="10" id="lI3-QL-DOG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wq3-SP-XhQ" secondAttribute="trailing" constant="10" id="JOq-l5-Euv"/>
+                    <constraint firstItem="wq3-SP-XhQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ZBe-Pn-HQU"/>
+                    <constraint firstAttribute="bottom" secondItem="wq3-SP-XhQ" secondAttribute="bottom" constant="10" id="akS-pJ-I92"/>
+                    <constraint firstItem="wq3-SP-XhQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lv6-5X-uoc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backView" destination="wq3-SP-XhQ" id="bbx-SD-zVM"/>
+                <outlet property="singerNameLabel" destination="gQT-b6-AJx" id="iKt-7b-Zwd"/>
+                <outlet property="songNameLabel" destination="8XJ-t5-Hcw" id="ZPn-uC-8Gj"/>
+            </connections>
+            <point key="canvasLocation" x="195.6521739130435" y="112.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
