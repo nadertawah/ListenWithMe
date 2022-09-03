@@ -34,7 +34,7 @@ class ProfileView: UIViewController
         VM.logout
         {
             [weak self] in
-            let loginV = LoginRegisterView()
+            let loginV = LoginRegisterView()            
             self?.navigationController?.isNavigationBarHidden = true
             self?.navigationController?.setViewControllers([loginV], animated: true)
             self?.tabBarController?.tabBar.isHidden = true

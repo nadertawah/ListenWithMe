@@ -59,6 +59,7 @@ class PlayerVC: UIViewController
         iPodPlayer.stop()
         iPodPlayer.setQueue(with: [])
         iPodPlayer.currentPlaybackTime = 0
+        VM.resetNowPlaying()
     }
     init(friend:User)
     {

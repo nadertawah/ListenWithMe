@@ -18,7 +18,8 @@ class BaseNavBar : UINavigationController
         navigationBar.prefersLargeTitles = true
         
         navigationBar.tintColor = UIColor.black
-        
+        overrideUserInterfaceStyle = .light
+
         self.viewControllers = [BaseTabBar()]
     }
     
